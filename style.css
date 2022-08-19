@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+
+
+
+}
+.clock{
+    height: 800px ;
+    width: 800px;
+    background: url(./ios_clock.svg) no-repeat rgb(236, 236, 236);
+    
+    border-radius: 50%;
+    background-size: 90%;
+    background-position: center;
+    border: dashed 20px gray ;
+    position: relative;
+    outline: 20px;
+    outline-style: solid ;
+   box-shadow: rgba(0, 0, 0, 0.56) 70px 70px 100px 10px;
+   margin-top: 200px;
+   margin-bottom: 200px;
+}
+
+.dot{
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        background-color: black;
+        top: 48.5%;
+        left: 48.5%;
+        transform-origin: top;
+       
+        
+        border-radius: 50%;
+
+}
+.second{
+    position: absolute;
+    width: 3px;
+    height: 280px;
+    background-color: red;
+    bottom: 50%;
+    left: 50.2%;
+    /* transform: translateX(-50%); */
+    transform-origin: bottom;
+
+    
+}
+.hour{
+    position: absolute;
+    height: 170px;
+    width: 7px;
+    background-color: black;
+    bottom: 50%;
+    left: 50.25%;
+    transform-origin: bottom;
+    /* transform: translateX(-50%); */
+}
+.minute{ position: absolute;
+    height: 250px;
+    width: 5px;
+    background-color: black;
+    bottom: 50%;
+    left: 50.25%;
+    transform-origin: bottom;
+    /* transform: translateX(-50%); */
+}
+.clock{
+
+
+ 
+    font-size: 8em;
+    background-color: #18191F;
+    color: #fff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+      2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+      inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+      inset 2px 2px 10px #8fe42e;
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 0 40px;
+    animation: animate 5s linear infinite;
+    text-shadow: 0 0 50px #0072FF, 0 0 100px #43047E, 0 0 150px #7006D4,
+      0 0 200px #461281;
+  }
+ @keyframes animate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
